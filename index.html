@@ -37,19 +37,33 @@
             margin: auto;
             background-color: white;
             border-radius: 20px;
+            overflow: hidden;
         }
 
         .left_container {
             width: 50%;
             height: 100%;
+            position: relative;
         }
 
         img {
             width: 100%;
             height: 100%;
             object-position: center;
-            border-radius: 20px 0 0 20px;
+        }
 
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 4rem;
         }
 
         .right_container {
@@ -58,8 +72,6 @@
         }
 
         h1 {
-
-            
             text-align: center;
             font-size: 4.5rem;
         }
@@ -80,7 +92,6 @@
             padding: 1rem;
             width: 80%;
             border-radius: 20px;
-
         }
 
         button {
@@ -88,13 +99,13 @@
             padding: 1rem;
             font-size: 1rem;
             border-radius: 20px;
-    
         }
 
-        button:hover{
+        button:hover {
             background-color: rebeccapurple;
             color: white;
         }
+
         .content {
             height: fit-content;
         }
@@ -131,14 +142,16 @@
             font-size: .9rem;
         }
 
-        span{
+        span {
             text-decoration: underline;
             font-weight: bolder;
             cursor: pointer;
         }
-        span:hover{
+
+        span:hover {
             color: rebeccapurple;
         }
+
 
         @media (max-width: 768px) {
             h1 {
@@ -176,6 +189,7 @@
     <div class="main_container">
         <div class="left_container">
             <img src="Assets/pexels-david-bartus-43782-586687.jpg" alt="Image" class="image">
+            <div class="overlay">Gustavo Tavels</div>
         </div>
         <div class="right_container">
             <div class="content">
